@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f959d97b7e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <div class="row ">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary z-1 position-fixed">
+                <div class="container-fluid">
+                    <a class="navbar-brand ml-auto " style="padding-left: 2px;" href="#"><img src="Logo.png" alt=""
+                            style="height: 30px;"></a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown" style="padding-left: 30px;">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item " style="padding-left: 30px;">
+                                <a class="nav-link active" aria-current="page" href="#">Sale</a>
+                            </li>
+
+
+                            <li class="nav-item " style="padding-left: 30px;">
+                                <a class="nav-link active" aria-current="page" href="#">New</a>
+                            </li>
+                            <li class="nav-item" style="padding-left: 30px;">
+                                <a class="nav-link" href="#">Popular</a>
+                            </li>
+
+                            <li class="nav-item" style="padding-left: 30px;">
+                                <a class="nav-link" href="#">Explore</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex " role="search" style="padding-right: 30px;">
+
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+
+                        </form>
+
+
+
+                        <ul class="navbar-nav  mb-2  mb-lg-0 ">
+                            <li class="nav-item " style="padding-right: 30px;">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-solid fa-user fa-lg pe-2"></i>Account</a>
+                            </li>
+                            <li class="nav-item " style="padding-right: 30px;">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-solid fa-cart-shopping fa-lg pe-2"></i>Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- slide section -->
+        <div class="row pt-5 ">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class=" carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <a href="https://getbootstrap.com/docs/5.3/utilities/position/#position-values"> <img
+                                src="offer2.png" class="d-block w-100 img-fluid" alt="..."></a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href=""> <img src="offer4.png" class="d-block w-100 img-fluid" alt="..."></a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href=""> <img src="offer3.png" class="d-block w-100 img-fluid" alt="..."></a>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <a href=""> <img src="offer1.png" class="d-block w-100 img-fluid" alt="..."></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- filter section -->
+        <div class="row pt-5">
+
+            <div class="col-4 col-md-2  price">
+                <button type="button" class="btn ">Price</button>
+            </div>
+            <div class=" col-4 col-md-2    Materials">
+                <button type="button" class="btn  ">Materials</button>
+            </div>
+            <div class=" col-4 col-md-2    Style">
+                <button type="button" class="btn  ">Style</button>
+            </div>
+            <div class=" col-4 col-md-2  Brand">
+                <button type="button" class="btn   ">Brand</button>
+            </div>
+            <div class=" col-4 col-md-2   Colour">
+                <button type="button" class="btn  ">Colour</button>
+            </div>
+
+            <div class=" col-4 col-md-2   sortby">
+
+                <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort by
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- product details -->
+        <div class="row pt-5 pb-5 ">
+            <div class="row d-flex">
+                <div class="col">
+                    <h1 class="pb-5"> Shoes</h1>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-6 col-xl-3  justify-content-lg-center ">
+                <div class="card  shoes1" style="width: 18rem; ">
+                    <img src="superstar.jpg" class="card-img-top img-fluid  bg-image hover-zoom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Adidas Superstar</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-6 col-xl-3 ">
+                <div class="card shoes2" style="width: 18rem; ">
+                    <img src="Nike SuperRep Go.jpg" class="card-img-top img-fluid  " alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Nike SuperRep Go</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card shoes3" style="width: 18rem;">
+                    <img src="Puma White Sneakers.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Puma White Sneakers </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card shoes4" style="width: 18rem;">
+                    <img src="Nike Aiforce 1 Shadow.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Nike Aiforce 1 Shadow</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- mobile phones -->
+
+        <div class="row  pb-5">
+            <div class="row d-flex jusstify-content-center">
+                <div class="col">
+                    <h1 class="pb-5"> Mobile Phones</h1>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-6 col-xl-3 ">
+                <div class="card mobile1" style="width: 18rem; ">
+                    <img src="Iphone 14 pro.jpg" class="card-img-top img-fluid  bg-image hover-zoom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Iphone 14 pro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card mobile2" style="width: 18rem; ">
+                    <img src="samsung galaxy note 10 plus.jpg" class="card-img-top img-fluid  " alt="...">
+                    <div class="card-body">
+                        <p class="card-text">samsung galaxy note 10 plus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card mobile3" style="width: 18rem;">
+                    <img src="One plus.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-text">One Plus </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card mobile4" style="width: 18rem;">
+                    <img src="Motorola Edge Plus .jpeg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Motorola Edge Plus</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- laptops -->
+
+
+        <div class="row  pb-5">
+            <div class="row d-flex jusstify-content-center">
+                <div class="col">
+                    <h1 class="pb-5"> Laptops</h1>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card lap1" style="width: 18rem; ">
+                    <img src="Mack Book.png" class="card-img-top img-fluid  bg-image hover-zoom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Mack Book</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card lap2" style="width: 18rem; ">
+                    <img src="Asus.jpg" class="card-img-top img-fluid  " alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Asus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card lap3" style="width: 18rem;">
+                    <img src="Hp.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-text">HP </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card lap4" style="width: 18rem;">
+                    <img src="Dell.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Dell</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Cameras -->
+
+
+        <div class="row  pb-5">
+            <div class="row d-flex jusstify-content-center">
+                <div class="col">
+                    <h1 class="pb-5"> Cameras</h1>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card cam1" style="width: 18rem; ">
+                    <img src="Nikon.jpg" class="card-img-top img-fluid  bg-image hover-zoom" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Nikon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card cam2" style="width: 18rem; ">
+                    <img src="Sony.jpg" class="card-img-top img-fluid  " alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Sony</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card cam3" style="width: 18rem;">
+                    <img src="Mamiya.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Mimiya </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 ">
+                <div class="card cam4" style="width: 18rem;">
+                    <img src="Canon.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Canon</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="row bg-dark ">
+
+            <div class="col-md-2 col-4 ">
+                <h6 class="text-secondary pt-5">ABOUT</h6>
+                <ul class="list-unstyled">
+                    <li> <a class=" link-light  link-offset-2 link-underline link-underline-opacity-0" href="">Contact
+                            Us</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">About
+                            Us</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0"
+                            href="">Careers</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">Borcelle
+                            Stories</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">Press</a>
+                    </li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href=""> Borcelle
+                            Wholesale</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">Corporate
+                            Information</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 col-4">
+                <h6 class="text-secondary pt-5">HELP </h6>
+                <ul class="list-unstyled">
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Payments</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Shipping</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Cancellation & Returns</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href=""> FAQ</a>
+                    </li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href=""> Report
+                            Infringement</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 col-4">
+                <h6 class="text-secondary pt-5">CONSUMER POLICY</h6>
+                <ul class="list-unstyled">
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href=""> Return
+                            Policy</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">Terms Of
+                            Use</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Security</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Privacy</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Sitemap</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href=""> Grievance
+                            Redressal</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href=""> EPR
+                            Compliance</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-1 col-2">
+                <h6 class="text-secondary pt-5">SOCIAL</h6>
+                <ul class="list-unstyled">
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0"
+                            href="">Facebook</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Facebook</a></li>
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            YouTube</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 col-4">
+                <h6 class="text-secondary pt-5">Mail Us:</h6>
+                <ul class="list-unstyled">
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Borcelle Internet Private Limited,
+
+                            Buildings Alyssa, Begonia &
+
+                            Clove Embassy Tech Village,
+
+                            Outer Ring Road, Devarabeesanahalli Village,
+
+                            Bengaluru, 560103,
+
+                            Karnataka, India</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <h6 class="text-secondary pt-5">Registered Address:</h6>
+                <ul class="list-unstyled">
+                    <li> <a class=" link-light link-offset-2 link-underline link-underline-opacity-0" href="">
+                            Borcelle Internet Private Limited,
+
+                            Buildings Alyssa, Begonia &
+
+                            Clove Embassy Tech Village,
+
+                            Outer Ring Road, Devarabeesanahalli Village,
+
+                            Bengaluru, 560103,
+
+                            Karnataka, India
+
+                            CIN : U51109KA2012PTC066107
+
+                            Telephone: 044-42114300</a></li>
+
+                </ul>
+            </div>
+
+            <div class="row  p-3">
+
+                <div class="col-md-2 col-6 text-light text-center seller"><i class="fa-solid fa-business-time fa-lg pe-2"
+                        style="color: #f4e115;"></i>Become a Seller</div>
+
+                <div class="col-md-2 col-6 text-light text-center ad"><i class="fa-regular fa-star fa-lg pe-2"
+                        style="color: #f4e115;"></i>Advertise</div>
+
+                <div class="col-md-2 col-6 text-light text-center gift"><i class="fa-solid fa-gift fa-lg pe-2"
+                        style="color: #f4e115;"></i>Gift Cards</div>
+
+                <div class="col-md-2 col-6 text-light text-center help"><i class="fa-regular fa-circle-question fa-lg pe-2"
+                        style="color: #f4e115;"></i>Help Center</div>
+
+                <div class="col-md-4 col-12 text-light text-center bor"> © 2007-2023 Borcelle.com</div>
+
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
